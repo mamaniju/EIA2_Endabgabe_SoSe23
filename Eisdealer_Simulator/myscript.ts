@@ -1,7 +1,7 @@
 /*
 Eisdealer-Simulator
 Julia Mamani, 268377, MKB2
-In Zusammenarbeit mit ...
+In Zusammenarbeit mit Evelin Sinner, Penelope Vogel, Anna-Lena Jörger
 */
 namespace Eisdiele {
   //let menuAngebot: string [] = ["bomba", "LaPaz", "SantaCruz"]; 

@@ -1,7 +1,7 @@
 /*
 Eisdealer-Simulator
 Julia Mamani, 268377, MKB2
-In Zusammenarbeit mit ...
+In Zusammenarbeit mit Evelin Sinner, Penelope Vogel, Anna-Lena Jörger
 */
 body {
   background-image: url(../Bilder/background.jpg);
@@ -36,7 +36,7 @@ p {
   padding: 10px;
   margin-top: 2em;
   width: 600px;
-  height: 500px;
+  height: 600px;
   color: rgb(86, 81, 81); 
   font-family:sans-serif, Arial, Helvetica;
 }
@@ -64,7 +64,8 @@ input[type=text] {
   vertical-align: middle;
 }
 #start {
-  margin-top: 2em;
+  position: absolute;
+  margin-left: 25%;
   background-color: #616564;
   color: white;
   padding: 15px 35px;
