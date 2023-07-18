@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MingiDB-Client</title>
+  <style>
+    span {
+      display: inline-block;
+      width: 5em;
+    }
+
+    button {
+      display: inline-block;
+      width: 6em;
+      margin: 1em 0em;
+    }
+    #query {
+      width: 40em;
+    }
+  </style>
+  <script src="Client.js"></script>
+</head>
+
+<body>
+  <h1>MingiDB-Client</h1>
+  <p>Hover over the fields and buttons for instructions.</p>
+  <form>
+    <fieldset>
+      <legend>Collection</legend>
+      <span>Name</span><input type="text" name="collection" id="" title="Enter the name of the collection to work with"/><br />
+      <button type="button" title="Shows the collections in the database">show</button>
+      <button type="button" title="Create a new collection with the name given above">create</button>
+      <button type="button" title="Delete the collection from the database">drop</button>
+    </fieldset>
+    <fieldset>
+      <legend>Document</legend>
+      This is an arbitrary structure for demonstration.
+      <a href="javascript:">Fill</a>
+      <a href="javascript:">Clear</a>
+      <br/><br/>
+      <span>Name</span><input type="text" name="name" id="" title="Enter a family name of a student"/><br />
+      <span>Firstname</span><input type="text" name="firstname" id="" title="Enter a firstname"/><br />
+      <span>Age</span><input type="text" name="age" id=""  title="Enter the age"/><br />
+      <span>Passed</span><input type="text" name="passed" id=""  title="Enter true or false if the student has passed the exams or not"/><br />
+      <button type="button" title="insert the document into the current collection">insert</button>
+      <button type="button" title="delete the document with the id given below from the current collection">delete</button>
+      <button type="button" title="find the document with the id given below, or the documents matching the criteria given above">find</button>
+      <button type="button" title="update the document specified by the id given below, with the information given above">update</button><br>
+      <span>Id</span><input type="text" name="id" id="" title="enter an id to specify a single document in the collection"/><br />
+    </fieldset>
+    <fieldset>
+      <legend>Query</legend>
+      <input type="text" disabled id="query" title="see the query string created that led to the result below"/><br />
+    </fieldset>
+    <fieldset>
+      <legend>Result</legend>
+      <textarea name="Result" id="" cols="60" rows="20" title="see the response from MingiDB"></textarea>
+    </fieldset>
+  </form>
+</body>
+
+</html>
